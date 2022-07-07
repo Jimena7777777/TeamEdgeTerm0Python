@@ -5,6 +5,7 @@
 
 # Example
 from itertools import product
+from sys import stdlib_module_names
 
 
 message = "Hello World!"
@@ -92,10 +93,7 @@ print(power)
 
 # **** Challenge 2: Problem 5 ****
 # Store the quotient of the power divided by 4 in a variable.
-# Print the quotient.
-
-quotient= quotient/4
-print(quotient)
+# Print the quotient
 
 # **** Challenge 2: Problem 6 ****
 # Store the remainder of the quotient divided by 2 in a variable.
@@ -109,4 +107,7 @@ print(quotient)
 
 num = 9
 
-# -------------------------------------------- 
+
+
+
+
