@@ -40,10 +40,12 @@ print(dictionary)
 
 ##################################  MY dictionary ########################### #/
 
-
-
-
-
+new_dict = {
+    "string": "ice is cold", 
+    "Is water wet": False,
+    "number": 9 ,
+    "Drinks": ["Coke" , "Water" , "Lemonade" , "Sprite"]
+}
 
 ########################################################################## #/
 
@@ -52,24 +54,33 @@ print(dictionary)
 print("------------------- CHALLENGE 2 : MODIFY   -------------------")
 
 #-->TODO: Print your dictionary you created above
-
+print(new_dict)
 
 #-->TODO: Update the dictionary you just created  by adding new properties and values, including list elements, in this section.
-
+new_dict = ["drinks"].append("sierra mist")
 
 #-->TODO: Print your dictionary again and observe changes
-
+print (new_dict)
 
 print("------------------- CHALLENGE 3 : MEHTODS   -------------------")
 
 
 #-->TODO: Make a method that will update your dictionary value. It should take in a dictionary and return it modified.
-
+def update(anydict):
+    anydict["name"] = "name1"
+    print(anydict)
 
 #-->TODO: Call the method.
-
+update(new_dict, "name", "name1")
 
 
 print("------------------- CHALLENGE 4 : LITERALLY   -------------------")
 
 #-->TODO: Put it all together using a string literal to tell the story of your dictionary!
+def return_element(list)
+ret_string = ""
+for l in list:
+    ret_string += str(l) + ", "
+    if(l == list [len(list)-1]):
+        ret_string += str(l) + "."
+        return ret_string

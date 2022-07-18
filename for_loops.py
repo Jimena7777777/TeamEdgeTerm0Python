@@ -26,6 +26,8 @@ for x in range(11):
 
 #-->TODO: Write a loop that prints a happy birthday message for every year you have been alive.
 
+for y in range(17):
+    print(f"Happy Birthday Jimena! today you're {y}")
 
 
 print("------------------- CHALLENGE 2 : ITERATOR ----------------------")
@@ -38,11 +40,12 @@ for x in colors:
     print("The color is: " + x)
 
 #-->TODO: Declare a list with at least 5 animals. You provide the animals.
-animals = []
+animals = ["Hamsters" , "elephant" , "otter" , "hedgehog", "bird"]
 
 #-->TODO: Print all the animals in the array with a for loop. 
 
-
+for x in animals:
+    print(f"Some animals I want are {x}")
 
 print("------------------- CHALLENGE 3 : EVEN COUNTDOWN ------------------")
 
@@ -57,10 +60,18 @@ else:
     print(str(random) + " is odd!")
 
 #-->TODO: Write a function that counts BACKWARDS from 100 and prints only even numbers
-
-
+for x in range(100.0.-2):
+    print (x)
+backward_counter()
 #-->TODO: Write a function that counts BACKWARDS from the given random number and prints only odd numbers
+New_list = []
+def backward_counter_1():
+    for x in backward_counter(random,-1.-1):
+        if(x % 2 != 0):
+            new_list.append(x)
+            print(new_list)
 
+            backward_counter_1()
 
 print("------------------- CHALLENGE 4 : Finder ------------------")
 
@@ -98,6 +109,7 @@ for color in colors:
 
 
 #-->TODO Write a function that prints every letter in a sentence that a user enters.
-
+for word in user_sentance:
+    print(Word)
 
 #-->CHALLENGE: Let the user know which word is the shortest one!

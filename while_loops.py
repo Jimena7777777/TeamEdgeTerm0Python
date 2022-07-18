@@ -42,7 +42,8 @@ def test_prime(n):
 
 #-->TODO: Declare a while loop that prints all the prime numbers between 0 and 100, use test_prime() helper function
 
-
+# for i in range(0,100)
+# print(i + " is prime" str(test_prime(i)))
 
 print("------------------- CHALLENGE 2 : FOUND   -------------------")
 
@@ -51,7 +52,12 @@ items = ["pencil" , "eraser" , "mirror" , "comb" , "spoon" , "key" , "earrings" 
 
 #-->TODO: Use a while loop to search the contents of a list for the key! If it exists, print "found the key!"
 
-
+i = 0
+while i <items:
+  if items[i] == "key":
+    print("found the key!")
+  else:
+      i = 1
 
 print("------------------- CHALLENGE 3 : BUGGIN   -------------------")
 
@@ -92,11 +98,20 @@ def pattern():
         my_list.append(index)
         print(my_list)
         index += 1
+while index <= 5:
 
 pattern()
 
 
 print("------------------- CHALLENGE 4 : MATH QUIZ   -------------------")
+
+random_number1 = random.randint(0, 100)
+random_number2 = random.randint(0, 100)
+user_input1 = input("guess first number:")
+user_input2 = input("guess first number:")
+if random_number1 == user_input1 and random_number2 == int(user_input2):
+  print("you are correct") 
+  is_correct = true
 
 
 
@@ -113,16 +128,19 @@ print("------------------- CHALLENGE 5 : WHAT AM I?   -------------------")
 #         You are given two starter functions and a loop to get started! 
 #         Notice how one function calls the other and uses the returned value as the input. This is called Recursion! 
 
-keep_asking = False
+keep_asking = true
 
 def prompt_user():
-    pass
+    print("hey, what do you think i am")
+responce = input()
+return responce
 
 def response(response):
-    pass
+  print(f"i know youre {responce}, but what am i")
 
-while keep_asking:
-    #response(prompt_user())
+
+while keep_asking == true:
+    response(prompt_user())
     pass
 
 #-->TODO: Challenge! write a secret word to break out of the loop!
